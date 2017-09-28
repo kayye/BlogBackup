@@ -77,9 +77,10 @@ feed:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: 
-    github: git@github.com:kayye/kayye.github.io.git,master
-    gitcafe: <repository url>,[branch]
+  repository: git@github.com:kayye/kayye.github.io.git
+  branch: master
+   # github: git@github.com:kayye/kayye.github.io.git,master
+   # gitcafe: <repository url>,[branch]
 
 # Archives
 #Archives 默认值为2,修改为1,Archives页面就只会列出标题,而非全文
@@ -112,3 +113,21 @@ category_generator:
 
 # ---------------------------------------------------------------
 
+ # jsonContent:
+ #    meta: false
+ #    pages: false
+ #    posts:
+ #      title: true
+ #      date: true
+ #      path: true
+ #      text: false
+ #      raw: false
+ #      content: false
+ #      slug: false
+ #      updated: false
+ #      comments: false
+ #      link: false
+ #      permalink: false
+ #      excerpt: false
+ #      categories: false
+ #      tags: true
