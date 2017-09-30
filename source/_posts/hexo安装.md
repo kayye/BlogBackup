@@ -34,7 +34,7 @@ $ hexo init
 
 ·然后就可以生成网站，启动服务了：
 ```
-$ hexo clean
+$ hexo clean   
 $ hexo generate
 $ hexo server
 ```

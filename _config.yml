@@ -15,7 +15,7 @@ excerpt_link: Read More
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://kayye.github.com.io ##站点域名
+url: http://kayye.github.io ##站点域名
 root: /
 permalink: :year/:month/:day/:title/ ##文章永久链接格式，可添加.html后缀，如 :title.html
 permalink_defaults:

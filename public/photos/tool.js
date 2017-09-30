@@ -1,6 +1,6 @@
-&quot;use strict&quot;;
-const fs = require(&quot;fs&quot;);
-const path = &quot;../../photos&quot;;
+"use strict";
+const fs = require("fs");
+const path = "../../photos";
 
 fs.readdir(path, function (err, files) {
     if (err) {
@@ -9,11 +9,11 @@ fs.readdir(path, function (err, files) {
     let arr = [];
     (function iterator(index) {
         if (index == files.length) {
-            fs.writeFile(&quot;output.json&quot;, JSON.stringify(arr, null, &quot;\t&quot;));
+            fs.writeFile("output.json", JSON.stringify(arr, null, "\t"));
             return;
         }
 
-        fs.stat(path + &quot;/&quot; + files[index], function (err, stats) {
+        fs.stat(path + "/" + files[index], function (err, stats) {
             if (err) {
                 return;
             }

@@ -5,19 +5,21 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://kayye.github.com.io">
+  <link rel="dns-prefetch" href="http://kayye.github.io">
   <title>hexoInsertText | Kayye</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="hexo &amp;#x6587;&amp;#x7AE0;&amp;#x4E0B;&amp;#x63D2;&amp;#x5165;&amp;#x56FE;&amp;#x7247;">
+  <meta name="description" content="hexo 文章下插入图片">
+<meta name="keywords" content="Hexo,文章,插入">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexoInsertText">
-<meta property="og:url" content="http://kayye.github.com.io/2017/01/07/hexoInsertText/index.html">
+<meta property="og:url" content="http://kayye.github.io/2017/01/07/hexoInsertText/index.html">
 <meta property="og:site_name" content="Kayye">
-<meta property="og:description" content="hexo &amp;#x6587;&amp;#x7AE0;&amp;#x4E0B;&amp;#x63D2;&amp;#x5165;&amp;#x56FE;&amp;#x7247;">
-<meta property="og:updated_time" content="2017-09-16T08:28:25.789Z">
+<meta property="og:description" content="hexo 文章下插入图片">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-01-07T02:37:20.749Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexoInsertText">
-<meta name="twitter:description" content="hexo &amp;#x6587;&amp;#x7AE0;&amp;#x4E0B;&amp;#x63D2;&amp;#x5165;&amp;#x56FE;&amp;#x7247;">
+<meta name="twitter:description" content="hexo 文章下插入图片">
   
     <link rel="alternative" href="/atom.xml" title="Kayye" type="application/atom+xml">
   
@@ -201,17 +203,17 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>hexo &#x6587;&#x7AE0;&#x4E0B;&#x63D2;&#x5165;&#x56FE;&#x7247;<br><a id="more"></a><br>hexo &#x4E0B;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x73B0;&#x5728;&#x5927;&#x6982;&#x6709;&#x51E0;&#x4E2A;&#x65B9;&#x6848;</p>
-<p>1.1 &#x653E;&#x5728;&#x6839;&#x76EE;&#x5F55;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#x65E9;&#x671F;&#x5927;&#x90E8;&#x5206;&#x7684;&#x65B9;&#x6848;&#x662F;&#x628A;&#x56FE;&#x7247;&#x653E;&#x5728; source/img &#x4E0B;&#xFF0C;&#x7136;&#x540E;&#x5728; markdown &#x91CC;&#x5199; ![img](/source/img/img.png) &#x3002;&#x663E;&#x7136;&#x8FD9;&#x6837;&#x5728;&#x672C;&#x5730;&#x7684;&#x7F16;&#x8F91;&#x5668;&#x91CC;&#x5B8C;&#x5168;&#x4E0D;&#x80FD;&#x6B63;&#x786E;&#x8BC6;&#x522B;&#x56FE;&#x7247;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</div></pre></td></tr></table></figure></p>
+        <p>hexo 文章下插入图片<br><a id="more"></a><br>hexo 下插入图片现在大概有几个方案</p>
+<p>1.1 放在根目录<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">早期大部分的方案是把图片放在 source/img 下，然后在 markdown 里写 ![img](/source/img/img.png) 。显然这样在本地的编辑器里完全不能正确识别图片的位置。</div></pre></td></tr></table></figure></p>
 <p>1.2 asset-image</p>
-<p>&#x5728; hexo 2.x &#x65F6;&#x51FA;&#x73B0;&#x7684;&#x63D2;&#x4EF6;&#xFF0C;&#x540E;&#x6765;&#x88AB;&#x5438;&#x7EB3;&#x8FDB; hexo 3 core &#xFF0C;&#x7528;&#x6CD5;&#x7684;&#x4ECB;&#x7ECD;&#x89C1; &#x8D44;&#x6E90;&#x6587;&#x4EF6;&#x5939; | Hexo &#x3002;&#x6BD4;&#x8F83;&#x5C34;&#x5C2C;&#x7684;&#x662F;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x76F4;&#x63A5;&#x653E;&#x5F03;&#x4E86; markdown &#x539F;&#x6765;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x4F7F;&#x7528;&#x7C7B;&#x4F3C; &#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x3002;markdown &#x672C;&#x6765;&#x6709;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x7684;&#x8BED;&#x6CD5;&#x4E0D;&#x597D;&#x597D;&#x652F;&#x6301;&#xFF0C;&#x4E13;&#x95E8;&#x7528;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8BED;&#x6CD5;&#x6765;&#x63D2;&#x5165;&#x672C;&#x5730;&#x56FE;&#x7247;&#xFF0C;&#x8BA9;&#x6211;&#x8FD9;&#x79CD;&#x5F3A;&#x8FEB;&#x75C7;&#x4E0D;&#x592A;&#x80FD;&#x63A5;&#x53D7;&#x3002;</p>
-<p>2 &#x89E3;&#x51B3;&#x65B9;&#x6848;</p>
+<p>在 hexo 2.x 时出现的插件，后来被吸纳进 hexo 3 core ，用法的介绍见 资源文件夹 | Hexo 。比较尴尬的是，这种方法直接放弃了 markdown 原来的语法，使用类似 的语法，。markdown 本来有插入图片的语法不好好支持，专门用一个新的语法来插入本地图片，让我这种强迫症不太能接受。</p>
+<p>2 解决方案</p>
 <p>CodeFalling/hexo-asset-image</p>
-<p>2.1 &#x4F7F;&#x7528;</p>
-<p>&#x9996;&#x5148;&#x786E;&#x8BA4; _config.yml &#x4E2D;&#x6709; post_asset_folder:true &#x3002;</p>
-<p>&#x5728; hexo &#x76EE;&#x5F55;&#xFF0C;&#x6267;&#x884C;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save</div></pre></td></tr></table></figure></p>
-<p>&#x5047;&#x8BBE;&#x5728;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">MacGesture2-Publish</div><div class="line">&#x251C;&#x2500;&#x2500; apppicker.jpg</div><div class="line">&#x251C;&#x2500;&#x2500; logo.jpg</div><div class="line">&#x2514;&#x2500;&#x2500; rules.jpg</div><div class="line">MacGesture2-Publish.md</div><div class="line"></div><div class="line">&#x8FD9;&#x6837;&#x7684;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#xFF08;&#x76EE;&#x5F55;&#x540D;&#x548C;&#x6587;&#x7AE0;&#x540D;&#x4E00;&#x81F4;&#xFF09;&#xFF0C;&#x53EA;&#x8981;&#x4F7F;&#x7528; ![logo](MacGesture2-Publish/logo.jpg) &#x5C31;&#x53EF;&#x4EE5;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x3002;</div></pre></td></tr></table></figure></p>
-<p>&#x751F;&#x6210;&#x7684;&#x7ED3;&#x6784;&#x4E3A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">public/2015/10/18/MacGesture2-Publish</div><div class="line">&#x251C;&#x2500;&#x2500; apppicker.jpg</div><div class="line">&#x251C;&#x2500;&#x2500; index.html</div><div class="line">&#x251C;&#x2500;&#x2500; logo.jpg</div><div class="line">&#x2514;&#x2500;&#x2500; rules.jpg</div><div class="line">&#x540C;&#x65F6;&#xFF0C;&#x751F;&#x6210;&#x7684; html &#x662F;</div><div class="line"></div><div class="line">&lt;img src=&quot;/2015/10/18/MacGesture2-Publish/logo.jpg&quot; alt=&quot;logo&quot;&gt;</div><div class="line">&#x800C;&#x4E0D;&#x662F;&#x611A;&#x8822;&#x7684;</div><div class="line"></div><div class="line">&lt;img src=&quot;MacGesture2-Publish/logo.jpg&quot; alt=&quot;logo&quot;&gt;</div></pre></td></tr></table></figure></p>
+<p>2.1 使用</p>
+<p>首先确认 _config.yml 中有 post_asset_folder:true 。</p>
+<p>在 hexo 目录，执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save</div></pre></td></tr></table></figure></p>
+<p>假设在<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">MacGesture2-Publish</div><div class="line">├── apppicker.jpg</div><div class="line">├── logo.jpg</div><div class="line">└── rules.jpg</div><div class="line">MacGesture2-Publish.md</div><div class="line"></div><div class="line">这样的目录结构（目录名和文章名一致），只要使用 ![logo](MacGesture2-Publish/logo.jpg) 就可以插入图片。</div></pre></td></tr></table></figure></p>
+<p>生成的结构为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">public/2015/10/18/MacGesture2-Publish</div><div class="line">├── apppicker.jpg</div><div class="line">├── index.html</div><div class="line">├── logo.jpg</div><div class="line">└── rules.jpg</div><div class="line">同时，生成的 html 是</div><div class="line"></div><div class="line">&lt;img src=&quot;/2015/10/18/MacGesture2-Publish/logo.jpg&quot; alt=&quot;logo&quot;&gt;</div><div class="line">而不是愚蠢的</div><div class="line"></div><div class="line">&lt;img src=&quot;MacGesture2-Publish/logo.jpg&quot; alt=&quot;logo&quot;&gt;</div></pre></td></tr></table></figure></p>
 
       
 
@@ -292,7 +294,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://kayye.github.com.io/2017/01/07/hexoInsertText/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://kayye.github.io/2017/01/07/hexoInsertText/" alt="微信分享二维码">
     </div>
 </div>
 
