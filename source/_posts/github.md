@@ -1,5 +1,5 @@
 ---
-title: AboutJava
+title: github
 date: 2017-09-12 15:29:41
 categories: github
 keywords: 用法
@@ -11,7 +11,7 @@ tags:
 
 
 
-**github分支问题
+**github分支问题**
 -----
 ```
 创好新的分支
