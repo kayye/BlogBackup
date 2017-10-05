@@ -1,5 +1,5 @@
 ---
-title: AboutJava
+title: hexo install
 date: 2017-09-06 22:29:41
 categories: hexo
 keywords: 用法
