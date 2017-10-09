@@ -1,3 +1,6 @@
+/**
+ * Created by zlw on 2016/1/1.
+ */
 "use strict";
 const fs = require("fs");
 const path = "../../photos";

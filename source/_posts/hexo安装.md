@@ -12,7 +12,7 @@ tags:
 ·安装node.js
 进入官网(https://nodejs.org/en/)
 下载安装包，直接点击安装就可以了
-
+<!--more-->
 ·安装git （因为要给github上传文章）
 git官网(http://git-scm.com)
 Windows: 直接下载和安装

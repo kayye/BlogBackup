@@ -19,7 +19,7 @@
     <link rel="alternative" href="/atom.xml" title="Kayye" type="application/atom+xml">
   
   
-    <link rel="icon" href="/assets/img/favicon.ico">
+    <link rel="icon" href="/assets/img/avatar.png">
   
   <link rel="stylesheet" type="text/css" href="/./main.266c1c.css">
   <style type="text/css">
@@ -53,7 +53,7 @@ var _hmt = _hmt || [];
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="https://github.com/kayye/BlogBackup/blob/master/source/asserts/img/avatar.png" class="js-avatar">
+			<img src="/assets/img/avatar.png" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Kayye</a></h1>
@@ -119,7 +119,7 @@ var _hmt = _hmt || [];
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="https://github.com/kayye/BlogBackup/blob/master/source/asserts/img/avatar.png" class="js-avatar">
+				<img src="/assets/img/avatar.png" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Kayye</h1>
@@ -180,53 +180,6 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-text" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/30/text/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-github" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -247,14 +200,10 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="github分支问题"><a href="#github分支问题" class="headerlink" title="github分支问题"></a><strong>github分支问题</strong></h2><pre><code>创好新的分支
-git banch &lt;分支名&gt; #创建分支
-git checkout       #切换分支
-git checkout -b    #切换+创建分支
-
-创建好后切换到新分支，先进行push
-git push origin &lt;新分支名&gt;
-</code></pre>
+        <p>#github的操作问题<br>
+        
+          <a class="article-more-a" href="/2017/09/12/github/#more">more >></a>
+        
       
 
       
@@ -327,14 +276,10 @@ git push origin &lt;新分支名&gt;
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h1><p>·安装node.js<br>进入官网(<a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a>)<br>下载安装包，直接点击安装就可以了</p>
-<p>·安装git （因为要给github上传文章）<br>git官网(<a href="http://git-scm.com" target="_blank" rel="external">http://git-scm.com</a>)<br>Windows: 直接下载和安装<br>Mac：进入git网站下载和安装，或者进入这里下载<br>Ubuntu：打开终端复制粘贴命令 sudo apt-get install git-core</p>
-<p>·安装、配置Hexo<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
-<p>·创建hexo目录并初始化<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ mkdir hexo</div><div class="line">$ cd hexo</div><div class="line">$ hexo init</div></pre></td></tr></table></figure></p>
-<p>·然后就可以生成网站，启动服务了：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo clean   </div><div class="line">$ hexo generate</div><div class="line">$ hexo server</div></pre></td></tr></table></figure></p>
-<p>·hexo文件夹<br>先来看一下hexo文件夹下的内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">hexo/</div><div class="line">|- node_modules/  # hexo需要的模块，不需要上传GitHub</div><div class="line">|- themes/        # 主题文件，需要上传GitHub的dev分支</div><div class="line">|- sources/       # 博文md文件，需要上传GitHub的dev分支</div><div class="line">|- public/        # 生成的静态页面，由hexo deploy自动上传到gh-page分支</div><div class="line">|- package.json   # 记录hexo需要的包信息，不需要上传GitHub</div><div class="line">|- _config.yml    # 全局配置文件，需要上传GitHub的dev分支</div><div class="line">|- .gitignore     # hexo生成默认的.gitignore，它已经配置好了不需要上传的hexo文件</div></pre></td></tr></table></figure></p>
-<h1 id="配置自己的-config-yml"><a href="#配置自己的-config-yml" class="headerlink" title="配置自己的_config.yml"></a>配置自己的_config.yml</h1><p>翻到最下面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/&lt;自己的github账号&gt;/blog.git</div><div class="line">  branch: gh-pages</div></pre></td></tr></table></figure></p>
-<h1 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h1>
+        <h1 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h1><p>·安装node.js<br>进入官网(<a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a>)<br>下载安装包，直接点击安装就可以了<br>
+        
+          <a class="article-more-a" href="/2017/09/06/hexo安装/#more">more >></a>
+        
       
 
       
@@ -407,6 +352,9 @@ git push origin &lt;新分支名&gt;
     
     <div class="article-entry" itemprop="articleBody">
       
+        <p>##知识点##<br>
+        
+          <a class="article-more-a" href="/2017/09/06/AboutJava/#more">more >></a>
         
       
 
@@ -481,7 +429,9 @@ git push origin &lt;新分支名&gt;
     <div class="article-entry" itemprop="articleBody">
       
         <p>1、判断一个数（小于10位）的位数。<br>输入999，则输出 “它是个3位的数！<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">    </div><div class="line">public class HelloWorld&#123;</div><div class="line">    public static void main(String[] args)&#123;</div><div class="line">        int num = 999;</div><div class="line">        int count = 0;</div><div class="line">        if(num&gt;=0&amp;&amp;num&lt;=999999999)&#123;</div><div class="line">            while(num&gt;=1)&#123;</div><div class="line">                count++;</div><div class="line">                num/=10;</div><div class="line">       &#125;</div><div class="line">            System.out.println(&quot;它是个&quot;+count+&quot;位的数！&quot;);</div><div class="line">        &#125;</div><div class="line">        else&#123;</div><div class="line">            System.out.println(&quot;输入有误&quot;);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-
+        
+          <a class="article-more-a" href="/2017/09/06/proJava/#more">more >></a>
+        
       
 
       
@@ -982,10 +932,98 @@ git push origin &lt;新分支名&gt;
 
 
   
+    <article id="post-测试文档" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/03/21/测试文档/">这是一篇测试文章</a>
+    </h1>
+  
+
+        
+        <a href="/2015/03/21/测试文档/" class="archive-article-date">
+  	<time datetime="2015-03-21T07:13:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-03-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>正文</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a>
+        
+          <a class="article-more-a" href="/2015/03/21/测试文档/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">测试</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Hexo/" class="article-tag-list-link color5">Hexo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/03/21/测试文档/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
   
 
 
@@ -1141,6 +1179,8 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">kayyeq,&lt;br&gt; 小白一枚</div>
   	  	
     	</section>
     
