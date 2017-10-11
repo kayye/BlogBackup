@@ -72,7 +72,7 @@ def compress(choose, des_dir, src_dir, file_list):
 def compress_photo():
     '''调用压缩图片的函数
     '''
-    src_dir, des_dir = "photos/", "min_photos/"
+    src_dir, des_dir = "pending_photos/", "min_photos/"
     
     if directory_exists(src_dir):
         if not directory_exists(src_dir):
@@ -138,7 +138,7 @@ def cut_photo():
     ----------
     调用Graphics类中的裁剪算法，将src_dir目录下的文件进行裁剪（裁剪成正方形）
     """
-    src_dir = "photos/"
+    src_dir = "pending_photos/"
     if directory_exists(src_dir):
         if not directory_exists(src_dir):
             make_directory(src_dir)
@@ -154,6 +154,11 @@ def cut_photo():
             pass
     else:
         print("source directory not exist!")     
+
+#def copy photo():
+#    root_dir = "photos/"
+
+
 
 
 
