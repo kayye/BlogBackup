@@ -8,18 +8,24 @@
   <link rel="dns-prefetch" href="http://kayye.github.io">
   <title>AboutJava | Kayye</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##知识点##">
+  <meta name="description" content="关键字  switch语句 主体1234567891011switch(表达式)&amp;#123;  case 常量值 1：        代码块1;        break;  case 常量值2:        代码块2;        break;  ...  default:        当以上常量值均不是时，执行本代码（可有可无）&amp;#125;">
 <meta name="keywords" content="知识点">
 <meta property="og:type" content="article">
 <meta property="og:title" content="AboutJava">
 <meta property="og:url" content="http://kayye.github.io/2017/09/06/AboutJava/index.html">
 <meta property="og:site_name" content="Kayye">
-<meta property="og:description" content="##知识点##">
+<meta property="og:description" content="关键字  switch语句 主体1234567891011switch(表达式)&amp;#123;  case 常量值 1：        代码块1;        break;  case 常量值2:        代码块2;        break;  ...  default:        当以上常量值均不是时，执行本代码（可有可无）&amp;#125;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-10-09T03:05:06.845Z">
+<meta property="og:image" content="http://kayye.github.io/assets/blogImg/AboutJava/keyword.jpg">
+<meta property="og:image" content="http://kayye.github.io/assets/blogImg/AboutJava/循环.jpg">
+<meta property="og:image" content="http://kayye.github.io/assets/blogImg/AboutJava/冒泡排序过程.png">
+<meta property="og:image" content="http://kayye.github.io/assets/blogImg/AboutJava/方法的模型.png">
+<meta property="og:image" content="http://kayye.github.io/assets/blogImg/AboutJava/内存的划分.png">
+<meta property="og:updated_time" content="2017-12-14T07:51:20.974Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AboutJava">
-<meta name="twitter:description" content="##知识点##">
+<meta name="twitter:description" content="关键字  switch语句 主体1234567891011switch(表达式)&amp;#123;  case 常量值 1：        代码块1;        break;  case 常量值2:        代码块2;        break;  ...  default:        当以上常量值均不是时，执行本代码（可有可无）&amp;#125;">
+<meta name="twitter:image" content="http://kayye.github.io/assets/blogImg/AboutJava/keyword.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Kayye" type="application/atom+xml">
   
@@ -199,7 +205,169 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##知识点##<br><a id="more"></a></p>
+        <ul>
+<li>关键字<br><img src="/assets/blogImg/AboutJava/keyword.jpg" alt=""></li>
+</ul>
+<h2 id="switch语句"><a href="#switch语句" class="headerlink" title="switch语句"></a>switch语句</h2><ul>
+<li>主体<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">switch(表达式)&#123;</div><div class="line">  case 常量值 1：</div><div class="line">        代码块1;</div><div class="line">        break;</div><div class="line">  case 常量值2:</div><div class="line">        代码块2;</div><div class="line">        break;</div><div class="line">  ...</div><div class="line">  default:</div><div class="line">        当以上常量值均不是时，执行本代码（可有可无）</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<a id="more"></a>
+<p>例子<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">Scanner scanner =new Scanner(System.in);</div><div class="line">        System.out.println(&quot;输入一个五分制的数&quot;);</div><div class="line">        int score = scanner.nextInt();</div><div class="line">        switch(score)&#123;</div><div class="line">            case 5:</div><div class="line">                System.out.println(&quot;优秀&quot;);</div><div class="line">                break;</div><div class="line">            case 4:</div><div class="line">                System.out.println(&quot;良好&quot;);</div><div class="line">                break;</div><div class="line">            case 3:</div><div class="line">                System.out.println(&quot;及格&quot;);</div><div class="line">                break;</div><div class="line">            case 2: case1:</div><div class="line">                System.out.println(&quot;不及格&quot;);</div><div class="line">                break;</div><div class="line">            default:</div><div class="line">                System.out.println(&quot;输入的分数不是五分制&quot;);</div><div class="line">        &#125;</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">Scanner scanner =new Scanner(System.in);</div><div class="line">       System.out.println(&quot;输入分数的等级&quot;);</div><div class="line">       char grade = scanner.next().charAt(0);</div><div class="line">       switch(grade)&#123;</div><div class="line">           case &apos;优&apos;:</div><div class="line">               System.out.println(&quot;5&quot;);</div><div class="line">               break;</div><div class="line">           case &apos;良&apos;:</div><div class="line">               System.out.println(&quot;4&quot;);</div><div class="line">               break;</div><div class="line">           case &apos;中&apos;:</div><div class="line">               System.out.println(&quot;3&quot;);</div><div class="line">               break;</div><div class="line">           case &apos;差&apos;:</div><div class="line">               System.out.println(&quot;2&quot;);</div><div class="line">               break;</div><div class="line">           default:</div><div class="line">               System.out.println(&quot;输入的不是分数等级&quot;);</div><div class="line">       &#125;</div></pre></td></tr></table></figure>
+<h2 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h2><ul>
+<li>while循环<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">while(循环继续的条件表达式)&#123;</div><div class="line">      循环体或称循环类容</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><img src="/assets/blogImg/AboutJava/循环.jpg" alt=""></p>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><ul>
+<li>数组初始化分为两种<br>1.静态初始化 //在数组创建之初直接指定其内容<br>2.动态初始化 //所有内容不会具体指定，都是默认值</li>
+</ul>
+<p>动态初始化声明一个数组<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">int 数组名 [] / int[] 数组名</div><div class="line">int arrayDame [];//声明一个数组</div><div class="line">int [] arrayDame;</div><div class="line">arrayDame = new int [10];//为数组开辟存储空间</div></pre></td></tr></table></figure></p>
+<p>静态初始化声明一个数组<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">int arrayDame[] = &#123;2,5,6,7,8,9,10&#125;;</div><div class="line">int[] arrayDame = &#123;2,5,6,7,8,9,10&#125;;</div></pre></td></tr></table></figure></p>
+<p>*没有空间的数组是不能用的</p>
+<p>给数组每个空间输出一个值,并且打印出来<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">//给数组每个空间输入一个值</div><div class="line">        for (int i = 0; i &lt; arrayDame.length; i++)&#123;</div><div class="line">            arrayDame[i] =  i*2+1;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        //打印数组每个空间对应的值</div><div class="line">        for(int i = 0; i&lt;arrayDame.length; i++)&#123;</div><div class="line">            System.out.println(arrayDame[i]);</div><div class="line">        &#125;</div></pre></td></tr></table></figure></p>
+<ul>
+<li>数组的应用<br>比较一个数组中的最大值和最小值<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">int[] arrayDemo = &#123;43, 34, 5, 66, 12&#125;;</div><div class="line">       int max,min;</div><div class="line">       max = min = arrayDemo[0];</div><div class="line">       for(int i=0;i&lt;arrayDemo.length;i++)&#123;</div><div class="line">           if(max&gt;arrayDemo[i])&#123;</div><div class="line">               max =arrayDemo[i];</div><div class="line">           &#125;</div><div class="line">           if(min&lt;arrayDemo[i])&#123;</div><div class="line">               min =arrayDemo[i];</div><div class="line">           &#125;</div><div class="line">       &#125;</div><div class="line">       System.out.println(&quot;最大值:&quot;+max);</div><div class="line">       System.out.println(&quot;最小值:&quot;+min);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>冒泡排序：泡沫排序或气泡排序）是一种简单的排序算法。 它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。 走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。 这个算法的名字由来是因为越小的元素会经由交换慢慢“浮”到数列的顶端<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">int arrayDemo[] = &#123;12,45,23,10,300&#125;;</div><div class="line">       for (int i =0;i&lt;arrayDemo.length-1;i++)&#123;</div><div class="line">           for(int j=i+1;j&lt;arrayDemo.length;j++) &#123;</div><div class="line">               if (arrayDemo[i]&lt;arrayDemo[j]) &#123;</div><div class="line">                   int temp = arrayDemo[i];</div><div class="line">                   arrayDemo[i] = arrayDemo[j];</div><div class="line">                   arrayDemo[j] = temp;</div><div class="line">               &#125;</div><div class="line">           &#125;</div><div class="line">           //每次排序的详细过程</div><div class="line">           System.out.print(&quot;第&quot;+(i+1)+&quot;排序:&quot;);</div><div class="line">           for(int j =0;j&lt;arrayDemo.length;j++)&#123;</div><div class="line">                System.out.print(&quot; &quot;+arrayDemo[j]);</div><div class="line">           &#125;</div><div class="line">           System.out.println(&quot; &quot;);</div><div class="line"></div><div class="line">       &#125;</div><div class="line">       for (int i=0;i&lt;arrayDemo.length;i++)&#123;</div><div class="line">           System.out.println(arrayDemo[i]);</div><div class="line">       &#125;</div></pre></td></tr></table></figure></p>
+<p><img src="/assets/blogImg/AboutJava/冒泡排序过程.png" alt="排序的步骤过程"></p>
+<ul>
+<li>二维数组<br>动态初始化声明一个数组<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">int 数组名 [][] / int[][] 数组名</div><div class="line">int arrayDame [][];//声明一个数组</div><div class="line">int [][] arrayDame;</div><div class="line">arrayDame = new int [10][10];//为数组开辟存储空间</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>静态初始化声明一个数组<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">int arrayDemo[][] =&#123;&#123;1,2&#125;,&#123;5,6&#125;,&#123;3,4&#125;&#125;;</div><div class="line">int[][] arrayDame = &#123;&#123;1,2&#125;,&#123;5,6&#125;,&#123;3,4,5&#125;&#125;;</div></pre></td></tr></table></figure></p>
+<p>打印二维数组<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">int arrayDemo [][] ;</div><div class="line">       arrayDemo = new int[10][10];</div><div class="line">        for (int i=0;i&lt;arrayDemo.length;i++)&#123;</div><div class="line">            for (int j=0;j&lt;arrayDemo[i].length;j++)&#123;</div><div class="line">                System.out.print(arrayDemo[i][j]);</div><div class="line">            &#125;</div><div class="line">            System.out.println();</div><div class="line">        &#125;</div></pre></td></tr></table></figure></p>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><ul>
+<li><p>方法<br>一半情况下方法的语法问<br></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"> modifier returnValueType methodName(list of parameters) &#123;</div><div class="line">  // Method body;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><img src="/assets/blogImg/AboutJava/方法的模型.png" alt=""><br><br></p>
+<ul>
+<li><p>修飾符:修飾符是可選的，告訴編譯器如何調用該方法。這定義了該方法的  訪|問類型。</p>
+</li>
+<li><p>返回類型: 方法可以返回一個值。returnValueType的值是方法返回的數據類型。有些方法冇有返回值執行所需的操作。在這種情況下，returnValueType是關鍵字void.</p>
+</li>
+<li><p>方法名稱: 這是方法的實際名稱。方法名和參數列表一起構成了方法簽名.</p>
+</li>
+<li><p>參數: 參數像一個占位符. 當調用一個方法，傳遞一個值給參數. 這個值被稱為實際參數或參數. 參數列表是指類型，順序和方法的參數的個數. 參數是可選的，也就是說，一個方法可以包含任何參數.</p>
+</li>
+<li><p>方法體: 方法體包含定義哪些方法語句的集合.</p>
+<blockquote>
+<p>方法的返回值类型，void类型是不需要返回值的，全部的类型都需要返回值<br><br></p>
+<ul>
+<li>方法的调用<br>创建一个方法，是做什么的定义，若要使用方法，必须调用它。有两种方法来调用一个方法，该选择是基于方法是否返回一个值或木有。</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>该方法有返回值的，调用该方法通常被视为一个值<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">int larger = max(30, 40);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>例子：
+</code></pre>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">public class text &#123;</div><div class="line">  public static void main(String args[]) &#123;</div><div class="line">      int i = 5;</div><div class="line">      int j = 7;</div><div class="line">      int k = max(i,j);</div><div class="line">      System.out.println(&quot;The maximum between &quot; + i +</div><div class="line">                  &quot; and &quot; + j + &quot; is &quot; + k);</div><div class="line">  &#125;</div><div class="line">public static int max(int i ,int j) &#123;</div><div class="line">    int result = 0;</div><div class="line">    if (i &lt; j)</div><div class="line">        result = j;</div><div class="line"></div><div class="line">    if (i &gt; j)</div><div class="line">        result = i;</div><div class="line"></div><div class="line">    return result;</div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<pre><code>- 该方法返回void，则调用该方法是一个语句
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">System.out.println(&quot;Welcome to Java!&quot;);</div></pre></td></tr></table></figure>
+
+
+例子
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"> public static void main(String[] args) &#123;</div><div class="line">   printGrade(78.5);</div><div class="line">&#125;</div><div class="line"></div><div class="line">public static void printGrade(double score) &#123;</div><div class="line">   if (score &gt;= 90.0) &#123;</div><div class="line">      System.out.println(&apos;A&apos;);</div><div class="line">   &#125;</div><div class="line">   else if (score &gt;= 80.0) &#123;</div><div class="line">      System.out.println(&apos;B&apos;);</div><div class="line">   &#125;</div><div class="line">   else if (score &gt;= 70.0) &#123;</div><div class="line">      System.out.println(&apos;C&apos;);</div><div class="line">   &#125;</div><div class="line">   else if (score &gt;= 60.0) &#123;</div><div class="line">      System.out.println(&apos;D&apos;);</div><div class="line">   &#125;</div><div class="line">   else &#123;</div><div class="line">      System.out.println(&apos;F&apos;);</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><blockquote>
+<p>在這裡，printGrade方法是一個void方法。它不返回任何值。調用一個void方法必須是一個語句。因此，它被調用在第3行中的main方法的聲明。此語句像分號結尾的Java語句。</p>
+</blockquote>
+<ul>
+<li>方法的重载<br>定义：方法名称相同，但是参数的类型和个数不同，通过传递参数的个数和类型不同来完成不同的功能。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">public static void tell(int i,int o)&#123;</div><div class="line">        System.out.println(i+o);</div><div class="line">    &#125;</div><div class="line">    public static void tell(int i,int o,int j)&#123;</div><div class="line">        System.out.println(i+o+j);</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h2><ul>
+<li>类的定义 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">class&#123;</div><div class="line">    属性</div><div class="line">    方法</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>&gt;<br>声明一个类一定要有关键字class，类名的首字母要大写<br>&lt;</p>
+<ul>
+<li>类与对象的关系<br>定义：类是对某一类事物的描述，是抽象的、概念上的意义，对象是实际存在的该类事物的每一个个体，也称为对象或实例</li>
+</ul>
+<p>内存的划分：<br><img src="/assets/blogImg/AboutJava/内存的划分.png" alt=""></p>
+<p>用法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">//创建一个类</div><div class="line">class Person&#123;</div><div class="line">    String name;</div><div class="line">    int age;</div><div class="line">    public void tell()&#123;</div><div class="line">        System.out.println(&quot;姓名&quot;+name+&quot; &quot;+&quot;年龄&quot;+age);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">public class text &#123;</div><div class="line">    public static void main(String args[]) &#123;</div><div class="line">        //创建对象</div><div class="line">        //赋值</div><div class="line">        //对象.属性</div><div class="line">        //对象.方法</div><div class="line">        Person per = null;   //声明</div><div class="line">        per =new Person;     //实例化操作</div><div class="line">        Person per =new Person();//声明并实例化</div><div class="line">        per.age = 30;</div><div class="line">        per.name = &quot;张三&quot;;</div><div class="line">        per.tell();</div></pre></td></tr></table></figure></p>
+<ul>
+<li><p>对象</p>
+<ul>
+<li>创建对象；<br>基本上一个对象是从一个类创建的。在java中，关键字new用于创建心的对象<br>从类创建对象时有三个步骤：<ul>
+<li>声明：变量声明，一个变量名的对象类型</li>
+<li>实例：“new”关键字用来创建对象</li>
+<li>初始化：关键字“new”后跟调用一个构造函数，用这个调用初始化对象</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>異常處理</p>
+<ul>
+<li><p>捕获异常<br>一种捕获的方法是使用try/catch关键字的组合异常。try/cath块放在围绕之中，可能产生异常的代码。try/catch块中的代码被称为受保护的代码，以及语法使用try/catch语句如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">    try</div><div class="line">&#123;</div><div class="line">   //Protected code</div><div class="line">&#125;catch(ExceptionName e1)</div><div class="line">&#123;</div><div class="line">   //Catch block</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>catch语句涉及声明异常的正在视图捕捉类型。吐过受保护的代码发生异常，catch块后面的试一下检查。如果发生异常的类型列在catch块，异常被传递到catch块多作为一个参数被传递到方法参数。</p>
+<ul>
+<li>例子<br>下面一个数组并有两个元素声明。然后代码视图访问它抛出一个异常数组的第三个元素。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">   // File Name : ExcepTest.java</div><div class="line">import java.io.*;</div><div class="line">public class ExcepTest&#123;</div><div class="line"></div><div class="line">   public static void main(String args[])&#123;</div><div class="line">      try&#123;</div><div class="line">         int a[] = new int[2];</div><div class="line">         System.out.println(&quot;Access element three :&quot; + a[3]);</div><div class="line">      &#125;catch(ArrayIndexOutOfBoundsException e)&#123;</div><div class="line">         System.out.println(&quot;Exception thrown  :&quot; + e);</div><div class="line">      &#125;</div><div class="line">      System.out.println(&quot;Out of the block&quot;);</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>- 多个catch快
+一个try块后面可以跟多个catch快。多个catch代码语法如下所示：
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">    try</div><div class="line">&#123;</div><div class="line">   //Protected code</div><div class="line">&#125;catch(ExceptionType1 e1)</div><div class="line">&#123;</div><div class="line">   //Catch block</div><div class="line">&#125;catch(ExceptionType2 e2)</div><div class="line">&#123;</div><div class="line">   //Catch block</div><div class="line">&#125;catch(ExceptionType3 e3)</div><div class="line">&#123;</div><div class="line">   //Catch block</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+前面的语句演示3个catch块，但可以有任意数量的其中的一个try后。如果受保护的代码发生异常，该异常被抛出到列表中的第一个catch块。如果抛出的异常的数据类型相匹配ExceptionType1，他就会被捕获不那里，如果不是，则该异常传递到第二catch语句，这中情况持续下去，知道异常要么被捕获或下落通过全部捕获，在这种情况下，目前的方法停止执行并抛出异常下落到以前的方法调用堆栈
+</code></pre><h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><ul>
+<li><p>IS-A关系<br>IS-A（是一个）是一种表达：这个对象是一个类型的对象</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">public class Animal&#123;</div><div class="line">&#125;</div><div class="line"></div><div class="line">public class Mammal extends Animal&#123;</div><div class="line">&#125;</div><div class="line"></div><div class="line">public class Reptile extends Animal&#123;</div><div class="line">&#125;</div><div class="line"></div><div class="line">public class Dog extends Mammal&#123;</div><div class="line">&#125;    </div><div class="line">public class Animal&#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>根据上面的语法，满足一下条件</p>
+<ul>
+<li>动物是哺乳动物类的父类</li>
+<li>动物是爬行类的父类</li>
+<li>哺乳动物和爬行动物是动物类的子类</li>
+<li>狗是哺乳动物双方的动物类的子类<br>考虑到IS-A的关系。可以说</li>
+<li>哺乳动物IS-A动物</li>
+<li>爬行动物IS-A的动物</li>
+<li>狗IS-A哺乳动物</li>
+<li>因此:狗IS-A动物<br>使用extends关键字的子类就可以除父类的私有属性，它继承父类的所有属</li>
+</ul>
+</li>
+<li>instanceof 关键字:<br>  用instanceof检测子类是否与父类相关</li>
+<li><p>HAS-A关系:<br> 這些關係主要是基於使用。這就決定了某一類是否 HAS-A 某一個東西。這種關係有助於​​減少重複代碼，以及錯誤。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">   public class Vehicle&#123;&#125;</div><div class="line">public class Speed&#123;&#125;</div><div class="line">public class Van extends Vehicle&#123;</div><div class="line">  private Speed sp;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>  这表明，Van类 HAS-A<br>  Speed类，通过让飞车一个单独的类，我们不必把属于加速Van类中的全部代码。这使他可以重复使用Speed类在多个应用程序。</p>
+<ul>
+<li><p>覆盖与重载<br>重载好处是：定义一个行为是特定于该子类的类型表示一个子类可以实现根据它要求一个父类的方法的能力</p>
+<ul>
+<li>规则方法重载：<ul>
+<li>参数列表应该是完全一样被覆盖的方法</li>
+<li>返回类型应相同或父类中的原重写方法声明的返回类型的子类型</li>
+<li>访问级别不能比被重写的方法的访问级别更严格。例如：如果父类方法声明为public，在子类中重写的方法不能是private或protected</li>
+<li>实例方法可以被覆盖，仅有上他们是由子类继承</li>
+<li>方法声明为finally不能被重写</li>
+<li>方法声明为静态的不能被覆盖，但可以重新声明</li>
+<li>如果一个方法不能被继承，那么它不能被重写</li>
+<li>作为实例的父类在容一个包内的子类可以重写未声明为四友的或最终的任何父类方法</li>
+<li>在不同的包中的子类只能重写非finally方法声明为public或protected</li>
+<li>重写方法可以抛出任何异常取消勾选，无论重写的方法是否抛出异常与否，但压倒一切的方法不应该抛出checked exceptions新的或不是由重写的方法声明的那些更广泛。重写方法可以抛出比重写的方法较窄或更少的例外。</li>
+<li>构造函数不能被重写</li>
+</ul>
+</li>
+<li>使用super关键字：<br>当调用一个重载方法的类型版本，那么需要使用super关键字<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">    class Animal&#123;</div><div class="line"></div><div class="line">   public void move()&#123;</div><div class="line">      System.out.println(&quot;Animals can move&quot;);</div><div class="line">   &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">class Dog extends Animal&#123;</div><div class="line"></div><div class="line">   public void move()&#123;</div><div class="line">      super.move(); // invokes the super class method</div><div class="line">      System.out.println(&quot;Dogs can walk and run&quot;);</div><div class="line">   &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">public class TestDog&#123;</div><div class="line"></div><div class="line">   public static void main(String args[])&#123;</div><div class="line"></div><div class="line">      Animal b = new Dog(); // Animal reference but Dog object</div><div class="line">      b.move(); //Runs the method in Dog class</div><div class="line"></div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>将产生以下结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">    Animals can move</div><div class="line">Dogs can walk and run</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<p><del>删除线</del><br><a href="http://tw.gitbook.net/java" target="_blank" rel="external">引用网址</a></p>
 
       
 
@@ -208,6 +376,17 @@ var _hmt = _hmt || [];
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">知识点</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
@@ -283,18 +462,18 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/2017/09/06/hexo安装/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/09/06/proJava/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          hexo install
+          JavaPro
         
       </div>
     </a>
   
   
-    <a href="/2017/09/06/proJava/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">JavaPro</div>
+    <a href="/2017/01/07/sublimeText/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">sublimeText</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -416,23 +595,31 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">知识点</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">日记</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">日常</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">命令</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">测试</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">教程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">题目</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">命令</a>
               </li>
             
             <div class="clearfix"></div>

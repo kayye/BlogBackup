@@ -8,9 +8,10 @@ tags: 命令
 
 
 sublime text 3快捷键与使用技巧介绍
-<!--more-->
+===
 
-#快捷键
+
+# 快捷键
 
 强大的快捷键，提高你的编码效率。
 常用快捷键
@@ -23,8 +24,8 @@ CTRL+Y：撤销还原
 CTRL+F：查找
 CTRL+H：替换
 Esc：小工具窗口隐藏
- 
-#编码快捷键
+ <!--more-->
+# 编码快捷键
 
 Ctrl+Shift+P 打开命令面板，如设置编码语言
 Tab：缩进、自动完成
@@ -55,7 +56,7 @@ Ctrl+PageDown 、Ctrl+PageUp 文件按开启的前后顺序切换
 Ctrl+鼠标左键 可以同时选择要编辑的多处文本
 Shift+鼠标右键（或使用鼠标中键）可以用鼠标进行竖向多行选择
  
-#查找快捷键
+# 查找快捷键
 
 CTRL+P：查找当前项目中的文件和快速搜索，快速查找标签位置
 Ctrl+P输入 @ 查找文件主标题/函数；或输入：跳转到文件某行
@@ -67,7 +68,7 @@ Ctrl+M 光标移动至括号内开始或结束的位置
 Ctrl+R 快速列出/跳转到某个函数
 ctrl+shift+F 在文件夹内查找，与普通编辑器不同的地方是sublime允许添加多个文件夹进行查找
 
-#其他快捷键
+# 其他快捷键
 
 Ctrl+K+B 开启/关闭侧边栏
 Ctrl+Tab 当前窗口中的标签页切换
@@ -88,7 +89,7 @@ F6 检测语法错误
 F9 行排序(按a-z)
 F11 全屏模式
 
-#安装插件准备步骤
+# 安装插件准备步骤
 
 安装package control
 
@@ -121,7 +122,7 @@ Upgrade Package ：升级插件
 Preferences→Package Control→Install Package，输入插件名称，会看到编辑器的底部在loading下载安装中，安装完后，一般重启即可。
 
 
-#编码快捷键，前端必备-Emmet
+# 编码快捷键，前端必备-Emmet
 
 Emmet作为zen coding的升级版，对于前端来说，可是必备插件，如果你对它还不太熟悉，可以在其官网（http://docs.emmet.io/）上看下具体的视频教程。或者是也可以再这里看http://docs.emmet.io/cheat-sheet/
 举例：ul#nav>li.item$*4>a{Item $}  然后Tab键
@@ -136,12 +137,12 @@ Emmet作为zen coding的升级版，对于前端来说，可是必备插件，�
 ```
 有够快么？还有更多例子，请看http://docs.emmet.io/abbreviations/syntax/##
 
-####快捷输出dtd头文件，即HTML头部信息
+#### 快捷输出dtd头文件，即HTML头部信息
 
 在没装emmet插件的情况下，如果输入html，显示的仅是简单的html结构，不包含dtd头文件，这让人很郁闷。不过以下的解决方法挺不错，支持多种头文件，html5的写法也支持哦~
 在装了emmet插件之后，可以使用html:4t、html:4s、html:xt、html:xs、html:xxs、html:5等6中dtd设置中的一种，然后TAB键，即可快速生成头文件。关于头文件，以前经常使用的是html:xt这个格式的，也就是dreamweaver自动生成的头文件。不过现在标准的是html:5的头文件，基本的浏览器都支持了，没什么问题。
 
-#让Sublime Text2支持快捷键在浏览器中预览
+# 让Sublime Text2支持快捷键在浏览器中预览
 
 用过dreamweaver的同学都知道，F12能快捷在浏览器中浏览正在编辑的文件。而这个功能在sublime需要，点击右键，然后open in browser。这显然还不够便捷。下面来看怎么解决吧~
 Sublime Text2支持用Python编写插件，详细步骤是：

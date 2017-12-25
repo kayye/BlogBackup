@@ -3,10 +3,12 @@ title: hexoInsertText
 date: 2017-01-07 10:22:14
 categories: Hexo
 keywords: Hexo,文章,插入
-tags: 命令
+tags: 教程
 ---
+
 hexo 文章下插入图片
-<!--more-->
+===
+
 hexo 下插入图片现在大概有几个方案
 
 1.1 放在根目录
@@ -14,7 +16,7 @@ hexo 下插入图片现在大概有几个方案
 早期大部分的方案是把图片放在 source/img 下，然后在 markdown 里写 ![img](/source/img/img.png) 。显然这样在本地的编辑器里完全不能正确识别图片的位置。
 ```
 1.2 asset-image
-
+<!--more-->
 在 hexo 2.x 时出现的插件，后来被吸纳进 hexo 3 core ，用法的介绍见 资源文件夹 | Hexo 。比较尴尬的是，这种方法直接放弃了 markdown 原来的语法，使用类似 的语法，。markdown 本来有插入图片的语法不好好支持，专门用一个新的语法来插入本地图片，让我这种强迫症不太能接受。
 
 2 解决方案

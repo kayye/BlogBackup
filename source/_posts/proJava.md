@@ -3,7 +3,7 @@ title: JavaPro
 date: 2017-09-06 15:29:41
 categories: Java
 keywords: 简单题目
-tags: 
+tags: 题目
 ---
 
 1、判断一个数（小于10位）的位数。
